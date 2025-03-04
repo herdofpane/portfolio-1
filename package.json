@@ -2,7 +2,7 @@
   "name": "portfolio",
   "homepage": "https://hamishw.com",
   "description": "Portfolio site for Bradley DJEDJE",
-  "repository": "https://github.com/HamishMW/portfolio.git",
+  "repository": "https://github.com/herdofpane/portfolio.git",
   "author": "Bradley DJEDJE",
   "sideEffects": false,
   "type": "module",
