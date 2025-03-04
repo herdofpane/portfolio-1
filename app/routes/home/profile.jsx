@@ -1,6 +1,6 @@
 import profileImgLarge from '~/assets/profile-large.jpg';
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImgPlaceholder from '~/assets/merci.jpg';
+import profileImg from '~/assets/merci.jpg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -18,20 +18,19 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Bonjour" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Je suis un développeur passionné, spécialisé dans la création de solutions logicielles et l’automatisation.  
+      J’aime concevoir des applications performantes en combinant expertise technique et optimisation des processus.  
+      Si tu veux voir certains de mes projets, jette un œil à ma <Link href="#project-1">page projets</Link>.
     </Text>
+    
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      En dehors du code, je m'intéresse à l’investissement dans des business automatisés et à l’innovation numérique.  
+      Je suis toujours curieux d’échanger sur de nouveaux projets, donc n’hésite pas à <Link href="/contact">me contacter</Link> !
     </Text>
+
   </Fragment>
 );
 
@@ -62,7 +61,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Envoie moi un message
               </Button>
             </div>
             <div className={styles.column}>
@@ -74,7 +73,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About me
+                  A propos de moi
                 </div>
               </div>
               <div className={styles.image}>

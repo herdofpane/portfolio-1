@@ -103,10 +103,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Développement d’un site de QCM universitaire"
+        description="Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif (API OpenAI) et une gestion de projet via GitHub."
+        // buttonText="View project"
+        // buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Création d’un site web E-commerce"
+        description="Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python."
+        // buttonText="View website"
+        // buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -148,10 +148,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Développement d’une application bancaire"
+        description="Étude et rédaction du cahier des charges, développement en Java et intégration avec une base de données, ainsi que rédaction de documentations techniques et utilisateur."
+        // buttonText="Voir project"
+        // buttonLink="/projects/slice"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

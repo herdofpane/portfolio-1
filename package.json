@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
+  "description": "Portfolio site for Bradley DJEDJE",
   "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams",
+  "author": "Bradley DJEDJE",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -25,6 +25,7 @@
     "framer-motion": "11.0.5",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",
+    "portfolio": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rehype-img-size": "^1.0.1",

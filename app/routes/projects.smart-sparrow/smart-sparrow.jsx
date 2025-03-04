@@ -105,7 +105,6 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
           roles={roles}
         />
         <ProjectSection padding="top">

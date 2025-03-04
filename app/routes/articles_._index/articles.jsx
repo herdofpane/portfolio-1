@@ -58,7 +58,6 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
       <RouterLink
         unstable_viewTransition
         prefetch="intent"
-        to={`/articles/${slug}`}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -66,18 +65,14 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
-            {dateTime}
           </div>
           <Heading as="h2" level={featured ? 2 : 4}>
-            {title}
+            {title} 
           </Heading>
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract}
           </Text>
           <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevron-right" as="div">
-              Read article
-            </Button>
             <Text className={styles.timecode} size="s">
               {timecode}
             </Text>
@@ -105,7 +100,7 @@ function SkeletonPost({ index }) {
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
-            Coming soon...
+            Competance {index + 1}
           </div>
           <Heading
             className={styles.skeletonBone}
@@ -118,7 +113,8 @@ function SkeletonPost({ index }) {
             size="s"
             as="p"
             style={{ height: 90, width: '100%' }}
-          />
+          >
+            merci</Text>
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevron-right" as="div">
               Read more
@@ -142,7 +138,7 @@ export function Articles() {
   const postsHeader = (
     <header className={styles.header}>
       <Heading className={styles.heading} level={5} as="h1">
-        <DecoderText text="Latest articles" />
+        <DecoderText text="Competence" />
       </Heading>
       <Barcode className={styles.barcode} />
     </header>
@@ -154,11 +150,11 @@ export function Articles() {
       {posts.map(({ slug, ...post }, index) => (
         <ArticlesPost key={slug} slug={slug} index={index} {...post} />
       ))}
-      {Array(2)
+      {/* {Array(2)
         .fill()
         .map((skeleton, index) => (
           <SkeletonPost key={index} index={index} />
-        ))}
+        ))} */}
     </div>
   );
 
