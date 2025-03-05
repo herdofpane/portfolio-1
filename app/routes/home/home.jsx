@@ -7,9 +7,9 @@ import gamestackTexture from '~/assets/gamestack-login.jpg';
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sprTextureLarge from '~/assets/image.png';
+import sprTexturePlaceholder from '~/assets/image.png';
+import sprTexture from '~/assets/image.png';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -150,8 +150,8 @@ export const Home = () => {
         index={3}
         title="Développement d’une application bancaire"
         description="Étude et rédaction du cahier des charges, développement en Java et intégration avec une base de données, ainsi que rédaction de documentations techniques et utilisateur."
-        // buttonText="Voir project"
-        // buttonLink="/projects/slice"
+        buttonText="Voir project"
+        buttonLink="/projects/appBank"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

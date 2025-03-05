@@ -63,21 +63,22 @@ import {
 import { baseMeta } from '~/utils/meta';
 import { Suspense, lazy, useMemo } from 'react';
 import { media } from '~/utils/style';
-import styles from './e-commerce.module.css';
+import styles from './appBank.module.css';
 
 const Earth = lazy(() => import('./earth').then(module => ({ default: module.Earth })));
 const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Création d’un site web E-commerce';
+const title = 'Développement d’une application bancaire';
 const description =
-  'Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python.';
+  'Étude et rédaction du cahier des charges, développement en Java et intégration avec une base de données, ainsi que rédaction de documentations techniques et utilisateur.';
 const roles = [
-  'Développement Frontend (React, JavaScript, HTML, CSS)',
-  'Intégration de la plateforme E-commerce',
-  'Développement du système de surveillance (JavaFX, Python)',
-  'Gestion de projet',
+  'Étude et rédaction du cahier des charges',
+  'Développement en Java',
+  'Intégration avec une base de données',
+  'Rédaction de documentations techniques et utilisateur',
+
 ];
 
 
@@ -97,20 +98,16 @@ export const SmartSparrow = () => {
   return (
     <>
       <ProjectContainer>
-        <ProjectBackground
-          opacity={isDark ? 0.5 : 0.8}
-          src={backgroundSpr}
-          srcSet={`${backgroundSpr} 1080w, ${backgroundSprLarge} 2160w`}
-          placeholder={backgroundSprPlaceholder}
-        />
-        <ProjectHeader
-          title={title}
-          description={description}
-          roles={roles}
-        />
-        <ProjectSection padding="top">
-          <ProjectSectionContent>
-            <ProjectImage
+      <ProjectBackground
+        opacity={isDark ? 0.5 : 0.8}
+        src="path/to/background.jpg"
+        srcSet={`path/to/background.jpg 1080w, path/to/background-large.jpg 2160w`}
+        placeholder="path/to/background-placeholder.jpg"
+      />
+      <ProjectHeader title={title} description={description} roles={roles} />
+      <ProjectSection padding="top">
+        <ProjectSectionContent>
+          <ProjectImage
               raised
               key={theme}
               srcSet={
@@ -128,79 +125,38 @@ export const SmartSparrow = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="Illustration de la boutique en ligne."
             />
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ProjectSection padding="top">
-          <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Objectif du projet</ProjectSectionHeading>
+        </ProjectSectionContent>
+      </ProjectSection>
+      <ProjectSection padding="top">
+        <ProjectSectionContent>
+          <ProjectTextRow>
+            <ProjectSectionHeading>Objectif du projet</ProjectSectionHeading>
+            <ProjectSectionText>
+              L’objectif de ce projet était de développer une application bancaire complète, incluant l'étude et la rédaction du cahier des charges, le développement en Java, et l'intégration avec une base de données. Le projet comprenait également la rédaction de documentations techniques et utilisateur.
+            </ProjectSectionText>
+          </ProjectTextRow>
+        </ProjectSectionContent>
+      </ProjectSection>
+      <ProjectSection light={isDark}>
+        <ProjectSectionContent>
+          <ProjectTextRow>
+            <ProjectSectionHeading>Technologies utilisées</ProjectSectionHeading>
+          </ProjectTextRow>
+          <ProjectTextRow>
+            <ProjectSectionContent>
               <ProjectSectionText>
-                L’objectif de ce projet était de concevoir une plateforme E-commerce permettant aux utilisateurs d’acheter des produits en ligne.
-                Le site devait offrir une interface intuitive et intégrer un système de surveillance pour suivre les transactions.
+                <ul>
+                  <li><strong>Langage de programmation :</strong> Java pour le développement de l'application.</li>
+                  <li><strong>Base de données :</strong> Intégration avec une base de données pour la gestion des données bancaires.</li>
+                  <li><strong>Documentation :</strong> Rédaction de documentations techniques et utilisateur pour une meilleure compréhension et utilisation de l'application.</li>
+                </ul>
               </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ProjectSection light={isDark}>
-          <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Technologies utilisées</ProjectSectionHeading>
-            </ProjectTextRow>
-            <ProjectTextRow>
-              <ProjectSectionContent>
-                <ProjectSectionText>
-                  <ul>
-                    <li><strong>Frontend :</strong> React, JavaScript, HTML, CSS pour une interface utilisateur moderne et réactive.</li>
-                    <li><strong>Plateforme E-commerce :</strong> Intégration d’une solution E-commerce pour la gestion des produits et des transactions.</li>
-                    <li><strong>Système de surveillance :</strong> Développement d’un système de surveillance en JavaFX et Python pour suivre les activités du site.</li>
-                    <li><strong>Gestion de projet :</strong> Suivi et collaboration via des outils de gestion de projet.</li>
-                  </ul>
-                </ProjectSectionText>
-              </ProjectSectionContent>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ProjectSection>
-          <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Système de surveillance</ProjectSectionHeading>
-              <ProjectSectionText>
-                Une des fonctionnalités innovantes de ce projet a été l'intégration d’un système de surveillance basé sur JavaFX et Python. Ce système permet de suivre les transactions et les activités des utilisateurs en temps réel.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-
-        <ThemeProvider theme="dark" data-invert>
-          <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprComponentsDark} 1280w, ${imageSprComponentsDarkLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprComponentsDarkPlaceholder}
-                alt="Illustration de la boutique en ligne."
-                sizes="100vw"
-              />
-            }
-          >
-            <ProjectSectionColumns width="full">
-              <ProjectSectionContent>
-                <ProjectTextRow center centerMobile noMargin>
-                  <ProjectSectionHeading>Conclusion</ProjectSectionHeading>
-                  <ProjectSectionText>
-                    Ce projet a permis de développer une plateforme E-commerce complète, intégrant des outils modernes comme JavaFX et Python pour améliorer l’expérience utilisateur et la gestion des transactions.
-                  </ProjectSectionText>
-                </ProjectTextRow>
-              </ProjectSectionContent>
-            </ProjectSectionColumns>
-          </ProjectSection>
-        </ThemeProvider>
-      </ProjectContainer>
+            </ProjectSectionContent>
+          </ProjectTextRow>
+        </ProjectSectionContent>
+      </ProjectSection>
+      <Footer />
+    </ProjectContainer>
       <Footer />
     </>
   );
