@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-56mEcsVX.js";import{a}from"./heading-Cj-hZXXx.js";const n="_list_eti0y_3",r="_item_eti0y_29",i={list:n,item:r},x=({ordered:s,children:t,className:m,...o})=>{const l=s?"ol":"ul";return e.jsx(l,{className:a(i.list,m),...o,children:t})},j=({children:s,...t})=>e.jsx("li",{className:i.item,...t,children:s});export{x as L,j as a};
