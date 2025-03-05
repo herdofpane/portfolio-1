@@ -105,8 +105,8 @@ export const Home = () => {
         index={1}
         title="Développement d’un site de QCM universitaire"
         description="Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif (API OpenAI) et une gestion de projet via GitHub."
-        // buttonText="View project"
-        // buttonLink="/projects/smart-sparrow"
+        buttonText="View project"
+        buttonLink="/projects/qcm"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -126,8 +126,8 @@ export const Home = () => {
         index={2}
         title="Création d’un site web E-commerce"
         description="Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python."
-        // buttonText="View website"
-        // buttonLink="https://gamestack.hamishw.com"
+        buttonText="View project"
+        buttonLink="/projects/e-commerce"
         model={{
           type: 'phone',
           alt: 'App login screen',

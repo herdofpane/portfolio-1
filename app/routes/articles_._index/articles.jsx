@@ -18,7 +18,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
   const [hovered, setHovered] = useState(false);
   const [dateTime, setDateTime] = useState(null);
   const reduceMotion = useReducedMotion();
-  const { title, abstract, date, featured, banner } = frontmatter;
+  const { title, abstract, date, featured, banner, niveaux } = frontmatter;
 
   useEffect(() => {
     setDateTime(formatDate(date));
@@ -72,6 +72,18 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract}
           </Text>
+
+          {niveaux && (
+            <ul className={styles.niveauxList}>
+              {niveaux.map((niveau, i) => (
+                <li key={i} className={styles.niveauItem}>
+                  <Text size="s">{niveau}</Text>
+                </li>
+              ))}
+            </ul>
+          )}
+
+
           <div className={styles.postFooter}>
             <Text className={styles.timecode} size="s">
               {timecode}

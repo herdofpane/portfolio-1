@@ -1,4 +1,4 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
+import profileImgLarge from '~/assets/merci.jpg';
 import profileImgPlaceholder from '~/assets/merci.jpg';
 import profileImg from '~/assets/merci.jpg';
 import { Button } from '~/components/button';
