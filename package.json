@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://herdofpane.github.io/portfolio-1/",
+  "homepage": "https://herdofpane.com",
   "description": "Portfolio site for Bradley DJEDJE",
-  "repository": "https://github.com/herdofpane/portfolio.git",
+  "repository": "https://herdofpane.github.io/portfolio-1/",
   "author": "Bradley DJEDJE",
   "sideEffects": false,
   "type": "module",
