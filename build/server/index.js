@@ -1,4 +1,4 @@
-import { s, i, j, o, k, l, h, p, q } from "./assets/server-build-D4_T1BjM.js";
+import { s, i, j, o, k, l, h, p, q } from "./assets/server-build-BOBzM_mL.js";
 import "react/jsx-runtime";
 import "@remix-run/react";
 import "isbot";
