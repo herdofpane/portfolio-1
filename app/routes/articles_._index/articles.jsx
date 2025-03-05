@@ -12,6 +12,8 @@ import { Link as RouterLink, useLoaderData } from '@remix-run/react';
 import { useState, useEffect } from 'react';
 import { formatDate } from '~/utils/date';
 import { classes, cssProps } from '~/utils/style';
+import { Link } from '~/components/link';
+
 import styles from './articles.module.css';
 
 function ArticlesPost({ slug, frontmatter, timecode, index }) {
@@ -83,7 +85,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
             </ul>
           )}
 
-
+      <Link href="/articles/modern-styling-in-react"></Link>
           <div className={styles.postFooter}>
             <Text className={styles.timecode} size="s">
               {timecode}

@@ -28,7 +28,7 @@ const ProfileText = ({ visible, titleId }) => (
     
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       En dehors du code, je m'intéresse à l’investissement dans des business automatisés et à l’innovation numérique.  
-      Je suis toujours curieux d’échanger sur de nouveaux projets, donc n’hésite pas à <Link href="/contact">me contacter</Link> !
+      Je suis toujours curieux d’échanger sur de nouveaux projets, donc n’hésite pas à me contacter !
     </Text>
 
   </Fragment>

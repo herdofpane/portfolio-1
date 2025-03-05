@@ -4,12 +4,12 @@ import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
 import backgroundSpr from '~/assets/spr-background.jpg';
-import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
-import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from '~/assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from '~/assets/spr-components-light-large.png';
-import imageSprComponentsLightPlaceholder from '~/assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from '~/assets/spr-components-light.png';
+import imageSprComponentsDarkLarge from '~/assets/crediterdebiter.png';
+import imageSprComponentsDarkPlaceholder from '~/assets/crediterdebiter.png';
+import imageSprComponentsDark from '~/assets/crediterdebiter.png';
+import imageSprComponentsLightLarge from '~/assets/crediterdebiter.png';
+import imageSprComponentsLightPlaceholder from '~/assets/crediterdebiter.png';
+import imageSprComponentsLight from '~/assets/crediterdebiter.png';
 import imageSprDesignSystemDarkLarge from '~/assets/spr-design-system-dark-large.png';
 import imageSprDesignSystemDarkPlaceholder from '~/assets/spr-design-system-dark-placeholder.png';
 import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
@@ -72,12 +72,20 @@ const EarthSection = lazy(() =>
 
 const title = 'Développement d’une application bancaire';
 const description =
-  'Étude et rédaction du cahier des charges, développement en Java et intégration avec une base de données, ainsi que rédaction de documentations techniques et utilisateur.';
+(
+  <>
+    Étude et rédaction du cahier des charges, développement en Java et intégration avec une base de données, ainsi que rédaction de documentations techniques et utilisateur.{' '}
+    <a href="https://github.com/herdofpane/sae2023-bank-2b4" target="_blank" rel="noopener noreferrer">
+      Voir sur GitHub
+    </a>
+  </>
+  );
 const roles = [
-  'Étude et rédaction du cahier des charges',
-  'Développement en Java',
-  'Intégration avec une base de données',
-  'Rédaction de documentations techniques et utilisateur',
+ 'Réaliser',
+  'Gérer',
+  'Conduire',
+  'Administrer',
+  'Collaborer'
 
 ];
 
@@ -155,7 +163,6 @@ export const SmartSparrow = () => {
           </ProjectTextRow>
         </ProjectSectionContent>
       </ProjectSection>
-      <Footer />
     </ProjectContainer>
       <Footer />
     </>

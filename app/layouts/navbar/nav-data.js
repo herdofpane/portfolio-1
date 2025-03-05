@@ -14,20 +14,25 @@ export const navLinks = [
     pathname: '/articles',
   },
   {
+    label: 'Langages et outils',
+    pathname: '/articles/modern-styling-in-react',
+  },
+  {
     label: 'Contact',
     pathname: '/contact',
   },
+  
 ];
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
-    url: `https://bsky.app/profile/${config.bluesky}`,
-    icon: 'bluesky',
+    label: 'CV',
+    url: `/cv.pdf`,
+    icon: 'copy',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
+    label: 'linkedin',
+    url: `https://www.linkedin.com/in/bradley-djedje-84aba8236/`,
     icon: 'figma',
   },
   {

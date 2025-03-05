@@ -1,12 +1,12 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
+import gamestackTexture2Large from '~/assets/Capture.png';
+import gamestackTexture2Placeholder from '~/assets/Capture.png';
+import gamestackTexture2 from '~/assets/Capture.png';
+import gamestackTextureLarge from '~/assets/Capture2.png';
+import gamestackTexturePlaceholder from '~/assets/Capture2.png';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
+import sliceTextureLarge from '~/assets/crediterdebiter.png';
+import sliceTexturePlaceholder from '~/assets/crediterdebiter.png';
+import sliceTexture from '~/assets/crediterdebiter.png';
 import sprTextureLarge from '~/assets/image.png';
 import sprTexturePlaceholder from '~/assets/image.png';
 import sprTexture from '~/assets/image.png';
@@ -98,6 +98,11 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -105,7 +110,7 @@ export const Home = () => {
         index={1}
         title="Développement d’un site de QCM universitaire"
         description="Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif (API OpenAI) et une gestion de projet via GitHub."
-        buttonText="View project"
+        buttonText="Voir project"
         buttonLink="/projects/qcm"
         model={{
           type: 'laptop',
@@ -126,7 +131,7 @@ export const Home = () => {
         index={2}
         title="Création d’un site web E-commerce"
         description="Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python."
-        buttonText="View project"
+        buttonText="Voir project"
         buttonLink="/projects/e-commerce"
         model={{
           type: 'phone',
@@ -163,11 +168,7 @@ export const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+ 
       <Footer />
     </div>
   );

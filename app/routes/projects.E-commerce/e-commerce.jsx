@@ -74,10 +74,13 @@ const title = 'Création d’un site web E-commerce';
 const description =
   'Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python.';
 const roles = [
-  'Développement Frontend (React, JavaScript, HTML, CSS)',
-  'Intégration de la plateforme E-commerce',
-  'Développement du système de surveillance (JavaFX, Python)',
-  'Gestion de projet',
+  'Réaliser',
+  'Optimiser',
+  'Gérer',
+  'Administrer',
+  'Collaborer',
+  'Conduire'
+
 ];
 
 

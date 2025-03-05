@@ -71,13 +71,20 @@ const EarthSection = lazy(() =>
 );
 
 const title = 'Développement d’un site de QCM universitaire';
-const description =
-  'Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif basé sur OpenAI et une gestion de projet via GitHub.';
+const description =(
+  <>
+    Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif basé sur OpenAI et une gestion de projet via GitHub.{' '}
+    <a href="https://github.com/herdofpane/sae-5-a-01-2024-2025-QCMJaune" target="_blank" rel="noopener noreferrer">
+      Voir sur GitHub
+    </a>
+  </>
+);
 const roles = [
-  'Développement Backend (Symfony, PHP)',
-  'Développement Frontend (HTML, CSS)',
-  'Intégration de Chatbot (OpenAI)',
-  'Gestion de projet (GitHub)',
+  'Réaliser',
+  'Optimiser',
+  'Gérer',
+  'Administrer',
+  'Collaborer'
 ];
 
 
