@@ -1,0 +1,4 @@
+const articles_modernStylingInReact = "---\r\ntitle: 'Langages et outils'\r\nabstract: 'Bienvenue sur la page des compétences. Découvrez ici mes différentes expertises techniques dans le développement, le web, les bases de données, les systèmes et les outils logiciels.'\r\ndate: ''\r\nbanner: /static/modern-styling-in-react-banner.jpg\r\nfeatured: true\r\n---\r\n\r\n## 🖥️ Développement\r\n\r\n- **Langages** : Java, C, C++, Python _(notions en Django)_, JavaFX\r\n\r\n## 🌐 Web\r\n\r\n- **Technologies** : HTML5, CSS3, PHP, Symfony, Angular\r\n\r\n## 🗄️ Base de Données\r\n\r\n- **SGBD** : PL/SQL\r\n\r\n## 🛠️ Système\r\n\r\n- **OS & Shell** : Bash, Linux\r\n\r\n## 🔧 Logiciels\r\n\r\n- **Environnements & Outils** : Eclipse, VS Code, MobaXterm, GitHub, UML, Docker\r\n";
+export {
+  articles_modernStylingInReact as default
+};
