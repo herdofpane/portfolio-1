@@ -2567,9 +2567,9 @@ const styles$h = {
   sidebarImages: sidebarImages$4,
   sidebarImage: sidebarImage$4
 };
-lazy(() => import("./earth-Cb1BPMQa.js").then((module) => ({ default: module.Earth })));
+lazy(() => import("./earth-DYEJAaYQ.js").then((module) => ({ default: module.Earth })));
 lazy(
-  () => import("./earth-Cb1BPMQa.js").then((module) => ({ default: module.EarthSection }))
+  () => import("./earth-DYEJAaYQ.js").then((module) => ({ default: module.EarthSection }))
 );
 const title$8 = "Développement d’un site de QCM universitaire";
 const description$6 = "Création d’un site web de QCM avec Symfony, PHP et HTML/CSS, intégrant un chatbot interactif basé sur OpenAI et une gestion de projet via GitHub.";
@@ -2767,9 +2767,9 @@ const eCommerce_module = {
   sidebarImages: sidebarImages$3,
   sidebarImage: sidebarImage$3
 };
-lazy(() => import("./earth-DYEJAaYQ.js").then((module) => ({ default: module.Earth })));
+lazy(() => import("./earth-Cb1BPMQa.js").then((module) => ({ default: module.Earth })));
 lazy(
-  () => import("./earth-DYEJAaYQ.js").then((module) => ({ default: module.EarthSection }))
+  () => import("./earth-Cb1BPMQa.js").then((module) => ({ default: module.EarthSection }))
 );
 const title$7 = "Création d’un site web E-commerce";
 const description$5 = "Développement d’une boutique en ligne avec rédaction d’un cahier des charges, intégration d’une plateforme E-commerce et un système de surveillance en JavaFX et Python.";
