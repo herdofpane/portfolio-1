@@ -11,8 +11,7 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client",
+    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
